@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<header class="section">
+    <video src="/vedio/世界很温柔—《龙族》上杉绘梨衣.mp4" id="videoPlayer" autoplay loop muted></video>
+    <button onclick="toggleMute()" id="muteButton">
+        <img src="./Pic/Sound turning off.png" alt="关闭声音" id="muteIcon">
+    </button>
+    <div class="Show">
+        <h3>Hello！</h3>
+        <p>I`m ChenHao</p>
+        <p>Welcome to my personal website</p>
+
+    </div>
+</header>
+<!-- <script src="script.js"></script> -->
+    <div class="banner section">
+    <div class="banner_box">
+        <div class="lunbo" id="lunbo">
+            <ul>
+                <li>
+                    <video src="./vedio/绘梨衣30S动态壁纸_thm2_ahq12_ahq12_1_thm2_chf3_prob3_ahq12.mp4" autoplay loop muted></video>
+                    <div class="happy">
+                        <h3>爱好：游戏</h3>
+                        <p>最喜欢的游戏是《万龙觉醒》</p>
+                    </div>
+                </li>
+                <li>
+                    <video src="./vedio/绘梨衣.mp4" autoplay loop muted></video>
+                    <div class="happy">
+                        <h3>爱好：小说</h3>
+                        <p>最喜欢滚开大大写的小说</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <video src="./vedio/202302160014.mp4" autoplay loop muted></video>
+                    <div class="happy">
+                        <h3>爱好：漫画</h3>
+                        <p>最喜欢的漫画是《我独自升级》</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dots" id="dots"></div>
+    </div>
+</div>
+    <div class="section1 section">
+        <div class="sec1_container">
+            <div class="sec_title"><p>主要项目</p></div>
+            <div class="sec_imglist">
+                <ul class="click_rotate" id="clickRotate">
+                    <li class="sec_left"><img src="./img/三峡.png" alt="">
+                        <p>Unity虚拟仿真项目</p>
+                    </li>
+                    <li class="sec_mid"><img src="./img/UE4.png" alt="">
+                        <p>UE4小游戏</p>
+                    </li>
+                    <li class="sec_right"><img src="./img/Unity二维闯关小游戏.png" alt="">
+                        <p>Unity二维闯关小游戏</p>
+                        
+                    </li>
+                </ul>
+            </div>
+            <a href="./resume.html" class="sec_bt">了解更多</a>
+        </div>
+    </div>
+    <div class="section2 section">
+        <div class="sec2_imgbox extend"></div>
+        <div class="sec2_contanier hide">
+            <div class="sec2_title">
+                <div class="plist">
+                    <label class="hot">个人简历</label>
+                    <span>Resume</span>
+                </div>
+                <p>点击查看我的个人简历</p>
+            </div>
+            <a href="./index2.html" class="sec2_bt">了解更多</a>  
+        </div>
+    </div>
+    <div class="section3 section">
+        <div class="sec3_imgbox extend"></div>
+        <div class="sec3_contanier hide">
+            <div class="sec3_title">
+                <div class="plist">
+                    <label class="hot">个人博客</label>
+                    <span>Personal blog</span>
+                </div>
+                <p>学习 进步 积累</p>
+            </div>
+            <a href="./blog.html" class="sec3_bt">了解更多</a>
+        </div>
+    </div>
+    <footer class="secti">
+        <!-- <div class="footer_comm" id="footer_comm">
+            <ul>
+                <li>
+                    <div class="hover_box2">
+                        <div class="hover_list2"><img src="./imges/footer_1uni_Applet.jpg" alt=""><p>引力域小程序</p></div>
+                        <div class="hover_list2"><img src="./imges/footer_1official_qiyuan.png" alt=""><p>长安启源订阅号</p></div>
+                        <div class="hover_list2"><img src="./imges/footer_1official_qiyuan_video.png" alt=""><p>长安启源视频号</p></div>
+                        <div class="hover_list2"><img src="./imges/footer_1qiyuan_Applet.jpg" alt=""><p>长安启源小程序</p></div>
+                    </div>
+                    <div class="imglist1"><img class="list_hover_show" src="./imges/footer_01.png" alt=""><img src="./imges/footer_01_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_2wb_qiyuan.png" alt=""><p>长安启源官方微博</p></div></div>
+                    <div class="imglist2"><img class="list_hover_show" src="./imges/footer_02.png" alt=""><img src="./imges/footer_02_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_3uni_app.jpg" alt=""><p>引力域APP</p></div></div>
+                    <div class="imglist3"><img class="list_hover_show" src="./imges/footer_03.png" alt=""><img src="./imges/footer_03_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_3bilibili.jpg" alt=""><p>长安汽车bilibili官方账号</p></div></div>
+                    <div class="imglist4"><img class="list_hover_show" src="./imges/footer_05.png" alt=""><img src="./imges/footer_05_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_Tiktok_qiyuan.png" alt=""><p>长安启源抖音官方账号</p></div></div>
+                    <div class="imglist5"><img class="list_hover_show" src="./imges/footer_06.png" alt=""><img src="./imges/footer_06_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_Know_qiyuan.png" alt=""><p>长安启源知乎官方账号</p></div></div>
+                    <div class="imglist6"><img class="list_hover_show" src="./imges/footer_07.png" alt=""><img src="./imges/footer_07_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_Kwai_qiyuan.png" alt=""><p>长安启源快手官方账号</p></div></div>
+                    <div class="imglist7"><img class="list_hover_show" src="./imges/footer_08.png" alt=""><img src="./imges/footer_08_is.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="hover_box1"><div class="hover_list1"><img src="./imges/footer_redBook_qiyuan.png" alt=""><p>长安启源小红书官方账号</p></div></div>
+                    <div class="imglist8"><img class="list_hover_show" src="./imges/footer_09.png" alt=""><img src="./imges/footer_09_is.png" alt=""></div>
+                </li>
+            </ul>
+        </div> -->
+        <div class="footer_record">
+            <p>友情链接：<a href="#">重庆陈昊个人网站官网</a></p>
+            <p> 陈昊 版权所有 <a href="#"> 增值个人业务经营许可证编号：渝B####### </a></p>
+            <p><a  class="logo" href="#">渝公网安备 50010502000164号</a></p>
+        </div>
+    </footer>
+    <div class="continue">
+        <div class="continue_box">
+            <img src="./imges/continue_img1.png" alt=""  style="display: none;">
+            <img src="./imges/continue_img2.png" alt="" >
+        </div>
+    </div>
+    <div class="right_nav">
+        <div class="rightnav_list">
+            <img src="./imges/rightnav_list1.png" alt="">
+            <img src="./imges/rightnav_list1is.png" alt="">
+        </div>
+        <div class="rightnav_list">
+            <img src="./imges/rightnav_list2.png" alt="">
+            <img src="./imges/rightnav_list2is.png" alt="">
+        </div>
+        <div class="rightnav_list" id="toTop">
+            <img src="./imges/rightnav_list3.png" alt="">
+            <img src="./imges/rightnav_list3is.png" alt="">
+        </div>
+    </div>
+    <div class="right_nav2">
+        <h3>个人简历</h3>
+        <div class="rightnav_list2" id="toFooter">
+            <img src="./imges/rightnav_list3.png" alt="">
+            <img src="./imges/rightnav_list3is.png" alt="">
+        </div>
+    </div>
+    <!-- <script src="./js/ajax.js"></script> -->
+     <script>
+       function toggleMute() {
+    var video = document.getElementById("videoPlayer");
+    var muteIcon = document.getElementById("muteIcon");
+    if (video.muted) {
+        video.muted = false;
+        muteIcon.src = "./Pic/Sound on.png"; // 替换为开启声音的图片路径
+        muteIcon.alt = "开启声音";
+    } else {
+        video.muted = true;
+        muteIcon.src = "./Pic/Sound turning off.png"; // 替换为关闭声音的图片路径
+        muteIcon.alt = "关闭声音";
+    }
+}
+        
+     </script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

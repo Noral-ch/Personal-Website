@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: auto; */
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+list-style: none;
+}
+
+.clears{
+    clear: none;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+table{
+    border-collapse: collapse;
+}
+textarea{
+    resize: none;
+}
+button{
+    cursor: pointer;
+}
+input,button,textarea{
+    outline: none;
+}
