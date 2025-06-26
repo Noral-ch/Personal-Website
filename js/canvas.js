@@ -104,12 +104,12 @@ Triangle.prototype.rotate = function () {
 // ---------------------------------------------------
 //  Stars (from paperjs.org examples section)
 // ---------------------------------------------------
-window.onmousemove = function (event) {
-  if (!event) return;
-  mousePos.x = event.x;
-  mousePos.y = event.y;
-  triangle.rotate();
-};
+// window.onmousemove = function (event) {
+//   if (!event) return;
+//   mousePos.x = event.x;
+//   mousePos.y = event.y;
+//   triangle.rotate();
+// };
 
 var buildStars = function () {
   // Create a symbol, which we will use to place instances of later:

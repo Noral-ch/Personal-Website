@@ -9,8 +9,8 @@
 </head>
 <body>
 <header class="section">
-    <video src="https://noralvedio.oss-cn-chengdu.aliyuncs.com/vedio/%E4%B8%96%E7%95%8C%E5%BE%88%E6%B8%A9%E6%9F%94%E2%80%94%E3%80%8A%E9%BE%99%E6%97%8F%E3%80%8B%E4%B8%8A%E6%9D%89%E7%BB%98%E6%A2%A8%E8%A1%A3.mp4" autoplay loop muted></video>
-    <button onclick="toggleMute()" id="muteButton">
+    <video src="./vediowebm/世界很温柔—《龙族》上杉绘梨衣 (online-video-cutter.com).webm" autoplay loop muted></video>
+    <button  id="muteButton">
         <img src="./Pic/Sound turning off.png" alt="关闭声音" id="muteIcon">
     </button>
     <div class="Show">
@@ -20,20 +20,21 @@
 
     </div>
 </header>
+
 <!-- <script src="script.js"></script> -->
     <div class="banner section">
     <div class="banner_box">
         <div class="lunbo" id="lunbo">
             <ul>
                 <li>
-                    <video src="https://noralvedio.oss-cn-chengdu.aliyuncs.com/vedio/%E7%BB%98%E6%A2%A8%E8%A1%A330S%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8_thm2_ahq12_ahq12_1_thm2_chf3_prob3_ahq12.mp4" autoplay loop muted></video>
+                    <video id="videoPlayer" src="./vediowebm/6月26日.webm" autoplay loop muted></video>
                     <div class="happy">
                         <h3>爱好：游戏</h3>
                         <p>最喜欢的游戏是《万龙觉醒》</p>
                     </div>
                 </li>
                 <li>
-                    <video src="https://noralvedio.oss-cn-chengdu.aliyuncs.com/vedio/%E7%BB%98%E6%A2%A8%E8%A1%A3.mp4" autoplay loop muted></video>
+                    <video src="./vediowebm/绘梨衣.webm" autoplay loop muted></video>
                     <div class="happy">
                         <h3>爱好：小说</h3>
                         <p>最喜欢滚开大大写的小说</p>
@@ -41,7 +42,7 @@
                 </li>
                 
                 <li>
-                    <video src="https://noralvedio.oss-cn-chengdu.aliyuncs.com/vedio/202302160014.mp4" autoplay loop muted></video>
+                    <video src="./vediowebm/202302160014.webm" autoplay loop muted></video>
                     <div class="happy">
                         <h3>爱好：漫画</h3>
                         <p>最喜欢的漫画是《我独自升级》</p>
@@ -175,19 +176,32 @@
     </div>
     <!-- <script src="./js/ajax.js"></script> -->
      <script>
-       function toggleMute() {
-    var video = document.getElementById("videoPlayer");
-    var muteIcon = document.getElementById("muteIcon");
-    if (video.muted) {
-        video.muted = false;
-        muteIcon.src = "./Pic/Sound on.png"; // 替换为开启声音的图片路径
-        muteIcon.alt = "开启声音";
-    } else {
-        video.muted = true;
-        muteIcon.src = "./Pic/Sound turning off.png"; // 替换为关闭声音的图片路径
-        muteIcon.alt = "关闭声音";
+       // 等待DOM加载完成
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取元素
+    const video = document.querySelector('header video');
+    const muteButton = document.getElementById('muteButton');
+    const muteIcon = document.getElementById('muteIcon');
+    
+    // 静音切换函数
+    function toggleMute() {
+        if (!video) return;
+        
+        video.muted = !video.muted;
+        if (video.muted) {
+            muteIcon.src = "./Pic/Sound turning off.png";
+            muteIcon.alt = "关闭声音";
+        } else {
+            muteIcon.src = "./Pic/Sound on.png";
+            muteIcon.alt = "开启声音";
+        }
     }
-}
+    
+    // 添加事件监听
+    if (muteButton) {
+        muteButton.addEventListener('click', toggleMute);
+    }
+});
         
      </script>
     <script src="./js/jquery-3.7.1.min.js"></script>

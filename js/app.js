@@ -140,6 +140,7 @@ function lunbo() {
 }
 
 
+
 //鼠标滚动页面翻到固定位置
 function ScrollNext(num){
     // 获取所有部分的DOM元素
@@ -176,7 +177,7 @@ function ScrollNext(num){
             setTimeout(() => {
                 isScrolling = false;
             }, 500); // 根据滚动动画的持续时间调整
-        });
+        }, { passive: false });
 }
 
 //到底部
